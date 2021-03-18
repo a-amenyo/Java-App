@@ -9,5 +9,4 @@ public interface IBranch {
     ArrayList<Customer> getCustomers();
     boolean newCustomer( String customerName, double initialTransaction);
     boolean addCustomerTransaction(String customerName, double transaction );
-    public Customer findCustomer( String customerName);
 }

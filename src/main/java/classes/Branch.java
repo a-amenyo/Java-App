@@ -24,7 +24,7 @@ public class Branch implements IBranch {
 
     @Override
     public boolean newCustomer( String customerName, double initialTransaction){
-        //checks if customer already exists/. don't allow for empty strings
+        //checks if customer already exists
         if ( findCustomer(customerName)==null && !customerName.equals("") && initialTransaction>=0){
             //create new customer object with customer name and the initial transaction
             Customer customer = new Customer(customerName, initialTransaction);
@@ -39,15 +39,13 @@ public class Branch implements IBranch {
         return false;
 
     }
-    @Override
-    public Customer findCustomer( String customerName){
-        //loop through customer array list
+
+    private Customer findCustomer( String customerName){
         for ( Customer customer : this.customers){
             if ( customer.getName().equalsIgnoreCase(customerName)){
                 return customer;
             }
         }
-        //otherwise return null
         return null;
     }
 }

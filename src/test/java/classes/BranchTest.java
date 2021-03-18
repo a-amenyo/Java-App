@@ -8,17 +8,18 @@ import static org.junit.Assert.*;
 public class BranchTest {
     Branch branch;
 
+    @Before
     public void setUp() throws Exception {
-            branch = new Branch("Kumasi Branch");
+            branch = new Branch("Kumasi");
             branch.newCustomer("Manuel", 500.00);
         }
 
     @Test
     public void getName() {
         //this method get the name of the branch object and checks to see if it is "Kumasi Branch"
-        assertEquals("Kumasi Branch", branch.getName());
+        assertEquals("Kumasi", branch.getName());
         //this method get the name of the customer object and checks to see if it is "London Branch" which is not
-        assertNotEquals("London Branch", branch.getName());
+        assertNotEquals("Adelaide", branch.getName());
     }
 
     @Test
@@ -41,8 +42,5 @@ public class BranchTest {
         // This method show that a customer who is not in the branch can't deposit in that branch
         assertFalse(branch.addCustomerTransaction("yaw",500.00));
     }
-
-    @Test
-    public void findCustomer() {
-    }
+    
 }

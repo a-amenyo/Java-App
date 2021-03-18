@@ -9,7 +9,7 @@ public class Branch implements IBranch {
     private String name;
     private ArrayList<Customer>customers;
 
-    public Branch(String name, ArrayList<Customer> customers) {
+    public Branch(String name) {
         this.name = name;
         this.customers = new ArrayList<>();
     }

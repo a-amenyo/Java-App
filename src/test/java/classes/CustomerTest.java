@@ -15,9 +15,9 @@ public class CustomerTest {
 
     @Test
     public void getName() {
-        //this method get the name of the customer object and checks to see if it is "Jedy"
+
         assertEquals("Agbesi", customer.getName());
-        //this method get the name of the customer object and checks to see if it is "Jefferson" which is not
+
         assertNotEquals("Victor", customer.getName());
     }
 

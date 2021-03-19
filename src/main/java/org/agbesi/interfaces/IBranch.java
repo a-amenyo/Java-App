@@ -1,6 +1,6 @@
-package interfaces;
+package org.agbesi.interfaces;
 
-import classes.Customer;
+import org.agbesi.classes.Customer;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package interfaces;
+package org.agbesi.interfaces;
 
 import java.util.ArrayList;
 

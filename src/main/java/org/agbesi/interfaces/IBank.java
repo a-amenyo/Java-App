@@ -1,4 +1,4 @@
-package interfaces;
+package org.agbesi.interfaces;
 
 public interface IBank {
      boolean addBranch( String branchName );

@@ -1,4 +1,4 @@
-package classes;
+package org.agbesi.classes;
 
 import org.junit.Before;
 import org.junit.Test;

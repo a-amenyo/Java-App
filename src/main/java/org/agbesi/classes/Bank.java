@@ -1,6 +1,6 @@
-package classes;
+package org.agbesi.classes;
 
-import interfaces.IBank;
+import org.agbesi.interfaces.IBank;
 
 import java.util.ArrayList;
 

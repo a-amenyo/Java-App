@@ -1,6 +1,6 @@
-package classes;
+package org.agbesi.classes;
 
-import interfaces.IBranch;
+import org.agbesi.interfaces.IBranch;
 
 import java.util.ArrayList;
 

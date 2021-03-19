@@ -10,30 +10,32 @@ public class CustomerTest {
 
     @Before
     public void setUp() throws Exception {
+//        Initializing aa new deposit of 2500.0 made by Agbesi
         customer = new Customer("Agbesi", 2500.00 );
     }
 
     @Test
     public void getName() {
 
+//        returns the name of the customer in the object which is Agbesi
         assertEquals("Agbesi", customer.getName());
-
+//        //this method gets the name of the branch object and checks to see if it is "Victor" which is false
         assertNotEquals("Victor", customer.getName());
     }
 
     @Test
     public void getTransactions() {
-        //this method get the amount in the transaction
+        //this method returns a list of transactions that have been made
         assertEquals(2500.00, customer.getTransactions().get(0), 0.0);
-        // this method checks if the amount in the transaction matches
+        // this method checks to see if the list of transactions have a value of 150.0
         assertNotEquals(150.00, customer.getTransactions().get(0), 0.0);
     }
 
     @Test
     public void addTransaction() {
-        // adding new transaction
+        // adding new transaction of 400.0
         customer.addTransaction(400.00);
-        //checking the transactions added
+        //checking the transactions added successfully
         assertEquals(2, customer.getTransactions().size());
     }
 }
